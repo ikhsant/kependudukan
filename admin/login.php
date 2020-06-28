@@ -12,7 +12,7 @@ $setting = mysqli_fetch_assoc(mysqli_query($conn,'SELECT * FROM setting LIMIT 1'
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Login <?php echo $setting['nama_website']; ?> | <?php echo $setting['deskripsi']; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/united-bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/font-awesome.css">
 </head>
 <style type="text/css">
@@ -21,7 +21,7 @@ $setting = mysqli_fetch_assoc(mysqli_query($conn,'SELECT * FROM setting LIMIT 1'
     /*background-image: url('../bg.jpg');*/
   }
   .container-form{
-    max-width: 450px; 
+    max-width: 350px; 
     margin-top: 150px;
     margin: auto; 
     margin-top: 50px; 

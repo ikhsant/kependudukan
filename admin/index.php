@@ -12,7 +12,6 @@ $jumlah_kk = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM penduduk GROUP BY
 ?>
 <!-- end query -->
 <!-- user -->
-<?php if($_SESSION['akses_level'] == "admin"){ ?>
 <div class="row">
 
     <div class="col-lg-3 col-md-6">
@@ -109,7 +108,6 @@ for ($i=0; $i < count($status_nama) ; $i++) {
     });
 
     </script>
-<?php } ?>
 
 
 <?php  
