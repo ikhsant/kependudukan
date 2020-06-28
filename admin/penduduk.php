@@ -34,7 +34,7 @@ $xcrud->table_name('Data Penduduk');
 $xcrud->columns('no_kk,nik,nama,desa,status,keterangan');
 $xcrud->relation('desa','desa','id_desa','nama_desa');
 $xcrud->relation('status','status','id_status','nama_status');
-if ($_GET['desa']) {
+if (isset($_GET['desa'])) {
 	$xcrud->where('desa',$_GET['desa']);
 }
 
