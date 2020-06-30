@@ -28,7 +28,7 @@ $status = mysqli_query($conn,"SELECT * FROM status");
 	</div>
 <div class="col-sm-8">
 <?php 
-if ($_GET['status']){
+if (isset($_GET['status'])){
 	$id_status = $_GET['status'];
 	$status = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM status WHERE id_status = '$id_status' "));
 	$nama_status = $status['nama_status'];
