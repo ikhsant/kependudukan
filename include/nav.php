@@ -18,6 +18,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="desa.php"><span class="fa fa-book"></span> Data Desa</a></li>
                     <li><a href="penduduk.php"><span class="fa fa-users"></span> Data Penduduk</a></li>
+                    <li><a href="penduduk_khusus.php"><span class="fa fa-users"></span> Data Khusus</a></li>
                     <li><a href="status.php"><span class="fa fa-bookmark"></span> Data Status</a></li>
                     <li><a href="laporan.php"><span class="fa fa-print"></span> Laporan</a></li>
                     <?php if($_SESSION['akses_level'] == "admin"){ ?>
