@@ -31,14 +31,12 @@ $desa = mysqli_query($conn,"SELECT * FROM desa");
 <?php
 $xcrud->table('penduduk');
 $xcrud->table_name('Data Penduduk');
-$xcrud->columns('no_kk,nik,nama,desa,status.nama_status,keterangan');
-$xcrud->fields('status.nama_status,status.keterangan',true);
+$xcrud->columns('no_kk,nik,nama,desa,status,keterangan');
 $xcrud->relation('desa','desa','id_desa','nama_desa');
-$xcrud->join('status','status','id_status');
 $xcrud->relation('status','status','id_status','nama_status');
 
-$xcrud->where('status.nama_status','Meninggal');
-$xcrud->or_where('status.nama_status','Pindah Kecamatan');
+$xcrud->where('status',['3','12','13']);
+
 
 if (isset($_GET['desa'])) {
 	$xcrud->where('desa',$_GET['desa']);
